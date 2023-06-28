@@ -77,7 +77,7 @@ const highlighter = (className, needsRemoval) => {
                     alreadyActive = true;
                 }
                 highlighterRemover(className);
-                if(alreadyActive){
+                if(!alreadyActive){
                     button.classList.add("active");
                 }
             }else{
